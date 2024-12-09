@@ -1,0 +1,41 @@
+.clr-input, .clr-textarea{
+    width: 80%;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}button{
+    margin-top: 25px;
+    padding: 8px;
+    margin-left: 20px; 
+    font-size: 15px;
+
+    
+ } 
+.container{
+    width: 100%;
+    max-width: 400px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgb(156, 194, 243);
+    padding: 20px;
+}
+
+/* .clr-textarea-wrapper {
+    white-space: nowrap;
+    display: flex;
+    margin-top: var(--cds-global-space-5);
+    width: 1000px; */
+/* } */
+.clr-select{
+   
+    
+    width: 140px;
+    background-color:  rgb(138, 190, 233);
+    font-size: 15px;
+    margin: 5px 5px;
+    border-bottom: 1px solid black;
+}
+h3{
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
