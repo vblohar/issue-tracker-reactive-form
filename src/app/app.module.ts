@@ -12,12 +12,14 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     IssueListComponent,
     IssueReportComponent,
-    ConfirmDialogComponent
+    ConfirmDialogComponent,
+   
   ],
   imports: [
     BrowserModule,

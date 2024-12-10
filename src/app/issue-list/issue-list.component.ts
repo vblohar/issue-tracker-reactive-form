@@ -7,12 +7,15 @@ import { Issue } from '../issue';
   templateUrl: './issue-list.component.html',
   styleUrl: './issue-list.component.css'
 })
-export class IssueListComponent implements OnInit {
+export class IssueListComponent implements OnInit, OnChanges {
   issues: Issue[] = [];
   showReportIssue = false;
   selectedIssue: Issue |null = null;
 
   constructor(private issueService: IssuesService) { }
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log('new issue - ',this.selectedIssue);
+  }
 
   ngOnInit(): void {
     console.log('new issue - ',this.selectedIssue);

@@ -26,11 +26,10 @@
     </clr-dg-row>
     <clr-dg-footer>{{ issues.length }} issues</clr-dg-footer>
   </clr-datagrid>
-  <app-confirm-dialog ></app-confirm-dialog>
+  
 </ng-container>
 <app-issue-report
   *ngIf="showReportIssue === true"
   (formClose)="onCloseReport()"
 ></app-issue-report>
-<app-confirm-dialog *ngIf="selectedIssue" [issueNo]="selectedIssue.issueNo" (confirm)="onConfirm($event)"></app-confirm-dialog>
-
+<app-confirm-dialog  (confirm)="onConfirm($event)"></app-confirm-dialog>

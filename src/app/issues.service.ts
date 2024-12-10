@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Issue } from './issue';
 import { issues } from '../assets/mock-issues';
+import { Title } from '@angular/platform-browser';
 
 @Injectable({
   providedIn: 'root'
@@ -31,5 +32,15 @@ export class IssuesService {
     };
     const index = this.issues.findIndex(i=> i === issue);
     this.issues[index] = selectedIssue;
+  }
+
+  getSuggestions(title: string): Issue[]{
+    if(title.length > 3){
+      let result = this.issues.filter(issue => issue.title.indexOf(title) !==-1 );
+      console.log(result);
+
+    }
+    
+    return[];
   }
 }
